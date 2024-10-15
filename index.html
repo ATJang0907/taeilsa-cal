@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인쇄소 메인 페이지</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 상단 헤더 -->
+    <header class="header">
+        <div class="logo">
+            <img src="스크린샷_2024-10-15_174551.png" alt="인쇄소 로고">
+        </div>
+        <div class="employee-code">
+            직원 코드: <input type="text" id="employeeCode" placeholder="직원 코드를 입력하세요">
+        </div>
+        <div class="cart">
+            <button onclick="goToCart()">장바구니</button>
+        </div>
+    </header>
+
+    <!-- 메인 컨텐츠 -->
+    <div class="container">
+        <div class="grid-container">
+            <!-- 제본 섹션 -->
+            <div class="grid-item">
+                <div class="title">제본</div>
+                <div class="item" onclick="goToQuote('wirelessBinding')">무선제본</div>
+                <div class="item" onclick="goToQuote('twinRingBinding')">트윈링제본</div>
+                <div class="item" onclick="goToQuote('coilBinding')">코일링제본</div>
+                <div class="item" onclick="goToQuote('saddleStitchBinding')">중철제본</div>
+                <div class="item" onclick="goToQuote('halfFoldBinding')">반접제본</div>
+                <div class="item" onclick="goToQuote('tapeBinding')">테이핑제본</div>
+            </div>
+
+            <!-- 인쇄 섹션 -->
+            <div class="grid-item">
+                <div class="title">인쇄</div>
+                <div class="item" onclick="goToQuote('colorPrint')">컬러인쇄</div>
+                <div class="item" onclick="goToQuote('blackPrint')">흑백인쇄</div>
+                <div class="item" onclick="goToQuote('largePrint')">대형인쇄</div>
+            </div>
+
+            <!-- 논문 섹션 -->
+            <div class="grid-item">
+                <div class="title">논문</div>
+                <div class="item" onclick="goToQuote('softCoverThesis')">소프트커버</div>
+                <div class="item" onclick="goToQuote('hardCoverThesis')">하드커버</div>
+            </div>
+
+            <!-- 기타 섹션 -->
+            <div class="grid-item">
+                <div class="title">기타</div>
+                <div class="item" onclick="goToQuote('businessCard')">명함</div>
+                <div class="item" onclick="goToQuote('scan')">스캔</div>
+                <!-- 기타 항목 추가 가능 -->
+            </div>
+        </div>
+
+        <!-- 하단 버튼 -->
+        <div class="nav-btns">
+            <button onclick="goToPage('employeeCode')">직원코드 바로가기</button>
+            <button onclick="goToPage('customerManagement')">고객관리</button>
+            <button onclick="goToPage('customerRegistration')">고객등록</button>
+            <button onclick="goToPage('quotationManagement')">견적서관리</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

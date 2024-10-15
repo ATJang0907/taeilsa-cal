@@ -1,0 +1,123 @@
+/* 페이지 기본 스타일 설정 */
+body {
+    font-family: 'Poppins', sans-serif; /* 세련된 폰트 사용 */
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1; /* 연한 회색 배경 */
+    color: #333; /* 기본 텍스트 색상: 진회색 */
+}
+
+/* 페이지 전체 레이아웃 설정 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 헤더 스타일 (우측 상단) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000; /* 검정색 배경 */
+    color: white; /* 흰색 텍스트 */
+    border-bottom: 3px solid #666666; /* 진회색 경계선 */
+}
+
+.header input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 14px;
+    width: 200px; /* 입력 필드 너비 */
+}
+
+.header button {
+    padding: 10px 20px;
+    background-color: #333333; /* 진한 회색 버튼 */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header button:hover {
+    background-color: #666666; /* 마우스 오버 시 더 밝은 회색 */
+}
+
+/* 그리드 레이아웃 설정 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 두 개의 열로 나열 */
+    grid-gap: 30px; /* 각 아이템 간격 */
+    margin-top: 40px;
+}
+
+/* 각 섹션 스타일 (제본, 인쇄 등) */
+.grid-item {
+    background-color: #ffffff; /* 흰색 배경 */
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 효과 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px); /* 마우스 오버 시 살짝 떠오르는 효과 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 그림자 강화 */
+}
+
+.grid-item .title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333333; /* 진한 회색 텍스트 */
+    border-bottom: 2px solid #666666; /* 진한 회색 경계선 */
+    padding-bottom: 10px;
+}
+
+.grid-item .item {
+    margin: 15px 0;
+    padding: 15px;
+    cursor: pointer;
+    color: #333333; /* 진한 회색 텍스트 */
+    text-align: center;
+    font-size: 18px;
+    background-color: #e6e6e6; /* 연한 회색 배경 */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.grid-item .item:hover {
+    background-color: #333333; /* 진한 회색 배경 */
+    color: white; /* 흰색 텍스트 */
+}
+
+/* 하단 버튼 스타일 */
+.nav-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.nav-btns button {
+    padding: 15px 30px;
+    margin: 0 10px;
+    background-color: #666666; /* 진회색 버튼 */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btns button:hover {
+    background-color: #999999; /* 마우스 오버 시 더 밝은 회색 */
+}
